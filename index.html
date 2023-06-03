@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabella con filtro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tabella con filtro</h1>
+
+        <div class="form-group">
+            <label for="filter">Filtro:</label>
+            <select id="filter" class="form-control">
+                <option value="name">Nome</option>
+                <option value="username">Username</option>
+                <option value="email">Email</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="search">Ricerca:</label>
+            <input type="text" id="search" class="form-control">
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Website</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- I risultati della chiamata API verranno inseriti qui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
